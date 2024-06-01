@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+h1 {
+  font-size: 60px;
+  color: #fff;
+  animation: mainText 2s;
+}
+
+.main-card{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h2{
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+span{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.input-pesquisar{
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.botao-pesquisar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: background-color 1s, transform 1s;
+}
+
+.botao-pesquisar:hover{
+  background-color: #6d6868;
+  transform: scale(1.2);
+}
+
+@keyframes mainText {
+  from{
+    transform: rotateX(90deg);
+  }
+  to{
+    transform: rotateX(0deg);
+  }
+}
